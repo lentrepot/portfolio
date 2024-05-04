@@ -601,6 +601,9 @@ footer {
  #monepi{
     width: 80vw;
     margin: 25px auto 25px auto;
-    padding: 15px 0 15px 0;
     border: 5px solid #f9ef77;
+ }
+ #monepi2{
+    font-size: 1.5rem;
+    margin-top: 45px; 
  }
