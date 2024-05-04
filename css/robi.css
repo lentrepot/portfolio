@@ -3,14 +3,18 @@
 /*----  NAVIGATION  -------------*/
 body{
     width: 100%;
-    
+padding: 3%;
+padding-top: 5%;
 }
 header{
-    position: fixed;
- 
+    position: fixed !important;
+
     justify-content: center;
-    width: 95%;
-z-index: 10;
+    width: 90%;
+    top: 0px;
+z-index: 999;
+
+
 
 }
 
@@ -21,7 +25,7 @@ z-index: 10;
     border-end-end-radius : 20% 20%;
     height : 8vh;
     width : 40vw;
-
+margin-left: -4%;
     }
     #liens ul {
     display : flex;
@@ -50,25 +54,26 @@ list-style: none;
         
             #menus {
                 display : flex;
-                position: absolute;
-                top: 0%;
-                margin-left: 75%;
+            margin-left: 70%;
                 
-                font-size: 2em;
+                
                 
                 }
              
                 #menus li a {
-                    font-family : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-family :  Haettenschweiler, 'Arial Narrow', sans-serif;
+                    
                 color : black;              
                 text-decoration : none;
                 list-style : none;
                 padding: 3% 20% 3% 20%;
+                font-size: 1.8em;
+                letter-spacing: 0.5px;
                 }
             
                #menus li{
-                margin-top: -2%;
-             
+                margin-right: 40%;
+             margin-top: -3%;
                 width: 10vw;
                 
                }
@@ -76,74 +81,140 @@ list-style: none;
                 
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
-                
+             
              }
              #m2{
                 
                 border-bottom-right-radius: 10px;
                 border-bottom-left-radius: 10px;
              }
-             #qui0, #quoi0{
-                background-color: red;
-             }
+            
 
-             @media only screen and (max-width: 1136px) and (min-width: 600px)  {
-                #menus{
-                    display : flex;
-                    position: absolute;
-                    top: 0%;
-                    margin-left: 65%;
-                    
-                    font-size: 2em;
-                }
-             #menus li  {
-                margin-left: 10px;
-                margin-right: 15px;
-
-             }
-            }
+     
 
 
-                @media screen and (max-width: 600px) {
-                  header{
-                    margin-top: 0%;
-                   
-                  }
-                    #presentation{
+                @media screen and (max-width: 750px) and (min-width: 350px) {
+                    body{
                         padding-top: 10%;
                     }
-                    #liens{
-                        height: 6vh;
-                        width: 60vw;
+                
+                    #menus{                      
+                       margin-left: 0%;             
                     }
+                    #menus li{
+                        margin-top: -4%;
+                        margin-right: 30%;
+                    }
+                   #liens{
+                    width: 50vw;
+                   }
                     #liens ul img{
                         height: 6vh;
-                        width: 12vw;
+                        width: 10vw;
+                        margin-left: 10px;
                     }
-                    #liens ul li:hover{
+                    #liens ul li:hover {
                         transform : none;
                         margin-top: 0px;
-                    }
-                    #menus{
-                        display : flex;
-                        position: absolute;
-                        top: 0%;
-                        margin-left: 55%;
-                        margin-right: 2%;
-                        font-size: 2em;
-                        
-                    }
-                 #menus li  {
-                    margin-left: 10px;
-                    margin-right: 15px;
-
-                 }
-               
-                img{
-                    width: auto;
+                        }
+            }
+/*--
+            @media screen and (max-device-width: 375px) {
+                #menus{
+                    margin-top: 3%;
+                }
+                body{
+                    padding-top: 50px;
                 }
             }
-        
+            @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 420px) {
+    #menus{
+        margin-left: 50%;
+    }
+    #menus li{
+        margin-right: 30px;
+        margin-top: -30%;
+    }
+    #liens{
+        height: 6vh;
+        width: 50vw;
+    }
+    #liens ul img{
+        height: 6vh;
+        width: 12vw;
+    }
+    body{
+        padding-top: 50px;
+    }
+}
+@media screen  and (max-device-height: 812px) {
+    #menus{
+        margin-left: 50%;
+    }
+    #menus li{
+        margin-right: 30px;
+        margin-top: -40%;
+    }
+    #liens{
+        height: 6vh;
+        width: 50vw;
+    }
+    #liens ul img{
+        height: 6vh;
+        width: 12vw;
+    }
+    }
+    @media screen and (max-device-height: 375px) {
+        #menus{
+            margin-top: 8%;
+        }
+      
+    }
+
+@media only screen 
+and (min-device-width : 412px) 
+and (max-device-width : 812px){
+    #menus{
+        margin-left: 55%;
+    }
+    #menus li{
+        margin-right: 30px;
+        margin-top: -40%;
+    }
+    #liens{
+        height: 6vh;
+        width: 50vw;
+    }
+    #liens ul img{
+        height: 6vh;
+        width: 12vw;
+    }
+    body{
+        padding-top: 50px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 812px) 
+and (max-device-width : 1124px){
+    #menus{
+        margin-left: 55%;
+    }
+    #menus li{
+        margin-right: 30px;
+        margin-top: -10%;
+    }
+    #liens{
+        height: 6vh;
+        width: 50vw;
+    }
+    #liens ul img{
+        height: 6vh;
+        width: 12vw;
+    }
+} 
     /*----    PARTIE 1 ----------*/
 
    
@@ -374,15 +445,16 @@ footer {
    border-radius: 30px;
         width: 20%;
         margin: auto;
-         margin-top: -4%;
+         
        
     }
     #aventure{
-        width: 30%;
+        width: 50%;
         margin: auto;
         box-shadow:  5px 5px 25px 15px rgba(172, 169, 169, 0.908) ;
     }
  #phare{
+    width: 50%;
     margin-left: 20%;
     box-shadow:  5px 5px 25px 15px rgba(172, 169, 169, 0.908) ;
  }
@@ -396,7 +468,139 @@ footer {
     margin-left: -5%;
     margin-top: 10%;
   }
+  @media screen and (max-width: 770px) {
+    #t-gauche{
+       text-align: center;
+       margin-left: 10%;;
+    }
+    #phare{
+        margin: auto;
+    }
+    #t-droite{
+        text-align: center;
+        margin-left: 10%;
+    }
+    #child{
+        width: 50%;
+    }
+}
   #travaux{
     margin-top: 10%;
   }
+
+ .carousel-control-next {
+    filter: invert(100%);
+    }
+
+ /*---    FORMULAIRE ----*/
+
+ fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    
+  }
+  label{
+    margin-top: 2%;
+    font-size: 1em;
+  }
+  
+  input{
+    height: 30px;
+  }
+  button{
+    margin-top: 5%;
+   height: 50px;
+   font-size: 0.7em;
+   cursor: pointer;
+ }
  
+ #intro{
+   font-size: 0.6em;
+  
+   font-family: Serif; 
+   
+ }
+
+
+ .card-img-overlay{ 
+   
+   width: 40%;
+    background-color: #f9ee77d4;
+   
+     
+    visibility: hidden;
+ }
+
+ .card-text{
+
+     font-size: 1em;
+     font-weight: bold;
+     text-shadow: 1px 1px 1px white;;
+ }
+
+ #perenne:before .card-img-overlay{
+    left: -20%;
+ }
+#perenne:hover .card-img-overlay{
+    visibility: visible;
+  
+
+    transform: translateX(20%);
+    transition-duration: 0.5s;
+ }
+
+
+#rudi:hover .card-img-overlay{
+    visibility: visible;
+  
+    transform: translateX(20%) ;
+    transition-duration: 0.5s;
+    
+ }
+
+ #odw:before .card-img-overlay{
+    left: -20%;
+ }
+#odw:hover .card-img-overlay{
+    visibility: visible;
+  
+
+    transform: translateX(20%);
+    transition-duration: 0.5s;
+ }
+
+
+#odw:hover .card-img-overlay{
+    visibility: visible;
+  
+    transform: translateX(20%) ;
+    transition-duration: 0.5s;
+    
+ }
+
+ #btp:before .card-img-overlay{
+    left: -20%;
+ }
+#btp:hover .card-img-overlay{
+    visibility: visible;
+  
+
+    transform: translateX(20%);
+    transition-duration: 0.5s;
+ }
+
+
+#btp:hover .card-img-overlay{
+    visibility: visible;
+  
+    transform: translateX(20%) ;
+    transition-duration: 0.5s;
+    
+ }
+ #monepi{
+    width: 80vw;
+    margin: 25px auto 25px auto;
+    padding: 15px 0 15px 0;
+    border: 5px solid #f9ef77;
+ }
