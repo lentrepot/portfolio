@@ -1,0 +1,362 @@
+body {
+    
+    width: 100%;
+   
+    margin: 0%;
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*_--- HEADER ---*/
+header {
+    overflow: hidden;
+   background-color: rgba(128, 128, 128, 0.438); 
+
+}
+
+/*--- MENUS NAVIGATION ----*/
+#menus{
+    font-size: 1em;
+    height: 30%;
+}
+#entete{
+    height: 200px;
+    background-color: rgb(0, 0, 0); 
+
+}
+
+ul.navigation {
+
+    margin-top: 0%;
+    font-family: 'Rubik', sans-serif;
+    list-style-type: none;
+    text-align: right;
+    background-color: black;
+    padding: 2%;
+    
+}
+
+.navigation li {
+    display: inline-block;
+    
+    padding: 1em;
+
+}
+.navigation li::first-letter{
+    font-size: 1.5em;
+    color:rgb(255, 0, 102);
+}
+
+ul, ol{
+    list-style-type: none;
+}
+/*--- NAVIGATION RESPONSIVE---*/
+@media only screen and (max-width: 1200px){
+    #menus{
+        font-size: 0.7em;
+        
+    }
+    .navigation li{
+        margin-top: 10%;
+       
+        padding: 0.50em;
+        
+    }
+}
+@media only screen and (max-width: 710px){
+    ul.navigation{
+
+    text-align: center;
+    }
+    .navigation li{
+      font-size: 0.6rem;
+        padding: 0.20em;
+        margin-top: 7rem;
+        
+        
+    }
+}
+.navigation a{
+
+    color: white;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.navigation a:hover{
+    opacity: 100%;
+}
+
+/*--- TEXTE D'INTRO ----*/
+
+#presentation {
+    text-align: center;
+    margin: auto;
+   width: 80%;
+   padding: 1%;
+   
+    color: white;
+   font-family: 'Abril Fatface', cursive;
+   font-size: 1.5em;
+   line-height: 1.4em;
+   letter-spacing: 1.5px;
+   
+   text-shadow:0 0 6px black;
+}
+@media only screen and (max-width: 1040px){
+    #presentation{
+        font-size: 1em;
+    }
+   
+}
+
+.imp{
+    color: bisque;
+}
+
+/*---- H1 BIENVENUE ---*/
+
+h1 {
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    color: white;
+    font-size: 2em;
+    
+    border-bottom: 3px solid rgb(255, 0, 102);
+}
+@media only screen and (max-width: 1200px){
+    h1{
+       
+        margin-left: 30%;
+        
+    }
+}
+@media only screen and (max-width: 710px){
+    h1{
+       font-size: 1.3em;;
+        margin-left: 20%;
+        
+    }
+}
+/*--- H2 TITRES SETIONS ---*/
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    border-bottom:4px solid rgb(255, 0, 115);
+    border-left: 2px solid rgb(255, 0, 115);
+    color: black;
+    
+    padding: 1ex;
+    text-align: center;
+    border-top-left-radius: 80px 40px;
+   
+   
+}
+
+/*--- H3 TITRES PARAGRAPHES ---*/
+h3{
+        height: 35px;
+        padding-top: 15px;;
+    color:rgb(255, 0, 115);
+    text-align: center;
+    background-color: bisque;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    z-index: 3;
+}
+
+/*---- SECTIONS ---*/
+section{
+    width: 90%;
+    border-left: 3px solid grey;
+    margin-bottom: 5%;
+   
+    
+}
+section>ul li::first-letter{
+font-weight: bold;
+
+    font-size: 1.3rem;
+}
+a[target]{
+    color:black;
+    text-shadow:0 0 3px  bisque;
+    font-weight: bold;
+    text-decoration: none;
+}
+a[target]:hover{
+    color: rgb(255, 0, 115);
+}
+
+iframe{
+   
+    margin: 12px;
+    margin-left: 10%;
+}
+
+/*--- FOOTER---*/
+footer{
+    background-color: black;
+    
+    
+}
+#basdepage{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;;
+}
+#basdepage li a{
+    color: white;
+    flex-direction: row; 
+    opacity: 0,5%;  
+}
+#basdepage li a:hover{
+    color: rgb(255, 0, 115);
+}
+/*--- TABLEAU-- */
+table{
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+td{
+    border: 1px solid grey;
+    padding: 8px;
+    
+}
+
+.premiereColonne{
+    background-color: bisque;
+    text-align: center;
+    font-weight: bold;
+}
+.populaire{
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.517);
+}
+.imagestab{
+    width: 80% ;
+}
+
+/* --- MON CV---*/
+#monCV{
+    text-align: right;
+    color: grey;
+}
+#jesuis {
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.profil{
+
+    border-left: 2px solid rgb(255, 0, 115);
+    padding: 2ex;
+    text-align: center;
+    border-bottom-left-radius: 80px 40px;
+}
+
+/*-- Images ----*/
+#logo{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    width: 15vw;
+   
+    filter: drop-shadow(0 0 0.75rem crimson) sepia(80%);
+}
+
+#positifs{
+    margin-top: -3%;
+    width: 100%;
+}
+
+#chien{
+  
+float: right;
+    width: 20%;
+
+    margin-top: -20%;
+    margin-right: 20%;
+}
+@media only screen and (max-width: 800px){
+    #chien{
+        margin-top: 10%;
+        margin-left: 3%;
+        width: 40%;
+    }
+   
+}
+
+#telephone1{
+    position: relative;
+    width: 30%;
+    margin-left: 15px;
+    float: right;
+    z-index: 0;
+    border: 8px solid rgb(72, 69, 69);
+}
+
+#telephone2{
+  
+    width: 25%;
+    border: 8px solid rgb(72, 69, 69);
+    float:left;
+    
+    margin-left: 4%;
+    margin-right: 15px;
+    margin-top: 0%;
+    margin-bottom: 35px;
+}
+@media only screen and (max-width: 900px){
+    #telephone2{
+        margin-left: 5%;
+    }
+   
+}
+@media only screen and (max-width: 750px){
+    #telephone2{
+        margin-left: 10%;
+    }
+   
+}
+#startup, #fusee {
+    margin-top: -20px;
+    width: 96%;
+    margin-left: 4%;
+
+}
+@media only screen and (max-width: 1000px){
+    #startup, #fusee{
+        margin-left: 10%;
+        width: 90%;
+    }
+   
+}
+/*-- vidéo ---*/
+#tvbpi{
+    width: 100%;
+}
+
+/*--- ANCRE HAUT DE PAGE ---*/
+.enHaut{
+    position: relative;
+    left: 80%;
+
+    font-size: 1.2em;
+    text-align: right;
+    font-family: 'Abril Fatface', cursive;
+    color:white;
+    text-shadow:0 0 3px black;
+}
+@media only screen and (max-width: 540px){
+
+    .enHaut{
+        left: 30%;
+    }
+}
+
+.enHaut:hover{
+    color: bisque;
+}
